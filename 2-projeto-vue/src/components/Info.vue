@@ -26,11 +26,13 @@ export default {
     components: {
         Picture
     },
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
     data() {
         return {
-            esta_trabalhando: true,
             mostrar_email: true,
-            email: "ericfreitassamp@gmail.com",
             meu_link: "https://ueriic.github.io/",
             textoBotao: "Mostrar e-mail",
             frontend_technologies: ["HTML", "CSS", "SCSS", "JavaScript", "Vue.js"],
